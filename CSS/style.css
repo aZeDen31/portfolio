@@ -4,6 +4,13 @@ body{
     background-color: #0B0E14;
 }
 
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 50px;
+}
+
 header nav{
     display: flex;
     flex-direction: row;
@@ -12,12 +19,40 @@ header nav{
     padding-bottom: 30px;
     background-color: #0B0E14;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
 header a {
+    position: sticky;
     text-decoration: none;
     color: white;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 10000px;
+}
+
+p, h1{
+    color: white;
+    line-height: 1.6;
+}
+
+.hero-section{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    gap: 50px;
+    width: 70%;
+}
+
+.hero-section p{
+    font-size: 1.4em;
+}
+
+.hero-image{
+    width: 800px;
+    height: auto;
 }
