@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Formaplus by Frequencies</title>
+  <!-- background removed for transparency -->
+
+  <!-- Icône : progression + média, sans croix médicale/religieuse -->
+  <g transform="translate(110 170)">
+    <!-- marches / progression -->
+    <path d="M0 250 Q0 236 14 236 H78 Q92 236 92 222 V175 Q92 161 106 161 H170 Q184 161 184 147 V100 Q184 86 198 86 H262 Q276 86 276 72 V26 Q276 12 290 12 H340 Q354 12 354 26 V104 Q354 118 342 126 L210 212 L90 287 Q76 296 62 296 H14 Q0 296 0 282 Z" fill="url(#gradIcon)"/>
+
+    <!-- flèche / lecture / apprentissage -->
+    <path d="M205 38 L382 146 Q398 156 398 174 Q398 192 382 202 L205 310 Q188 320 188 300 V214 H114 Q98 214 98 198 V150 Q98 134 114 134 H188 V48 Q188 28 205 38 Z" fill="#F5EFE2" opacity="0.96"/>
+
+    <!-- constellation de points data/formation -->
+    <g fill="#F2A900" opacity="0.88">
+      <circle cx="154" cy="294" r="7"/><circle cx="184" cy="270" r="7"/><circle cx="216" cy="248" r="7"/>
+      <circle cx="248" cy="226" r="7"/><circle cx="280" cy="206" r="7"/>
+      <circle cx="216" cy="294" r="7"/><circle cx="248" cy="270" r="7"/><circle cx="280" cy="248" r="7"/>
+      <circle cx="312" cy="226" r="7"/>
+      <circle cx="280" cy="294" r="7"/><circle cx="312" cy="270" r="7"/>
+      <circle cx="344" cy="248" r="7"/>
+    </g>
+  </g>
+
+  <!-- Texte -->
+  <g transform="translate(560 205)">
+    <text x="0" y="115" font-family="Georgia, 'Times New Roman', serif" font-size="150" font-weight="700" letter-spacing="-4">
+      <tspan fill="#F5EFE2">Forma</tspan><tspan fill="#F2A900">plus</tspan>
+    </text>
+    <text x="4" y="200" font-family="Arial, Helvetica, sans-serif" font-size="52" letter-spacing="16" fill="#F2A900">by Frequencies</text>
+  </g>
+
+  <defs>
+    <linearGradient id="gradIcon" x1="0" y1="300" x2="360" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F4511E"/>
+      <stop offset="52%" stop-color="#F2A900"/>
+      <stop offset="100%" stop-color="#F2A900"/>
+    </linearGradient>
+  </defs>
+</svg>
