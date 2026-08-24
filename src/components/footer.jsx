@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import LegalModal from './legalModal';
 import "../CSS/style.css";
 
 function Footer() {
     const [status, setStatus] = useState('');
+    const [showModal, setShowModal] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -76,9 +78,16 @@ function Footer() {
                     </form>
                 </div>
             </div>
+            
             <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} Lucas Gosselin. Tous droits réservés.</p>
+                <p>
+                    &copy; {new Date().getFullYear()} Lucas Gosselin. Tous droits réservés. 
+                    <span className="separator"> | </span> 
+                    <button onClick={() => setShowModal(true)} className="btn-legal-link">Mentions légales</button>
+                </p>
             </div>
+
+            {showModal && <LegalModal onClose={() => setShowModal(false)} />}
         </footer>
     );
 }

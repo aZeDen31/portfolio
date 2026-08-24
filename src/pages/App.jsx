@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import heroImg from '../assets/Selfie.jpg'
-import cvPDF from '../assets/CV Stage Web.pdf'
+import cvPDF from '../assets/CV Lucas Gosselin.pdf'
 import { projectsData } from '../data/projects.js'
 
 import Header from '../components/header'
