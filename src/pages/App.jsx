@@ -5,6 +5,7 @@ import { projectsData } from '../data/projects.js'
 
 import Header from '../components/header'
 import Project from './Project'
+import Footer from '../components/footer'
 
 import "../CSS/style.css"
 
@@ -74,6 +75,7 @@ function App() {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   )
 }

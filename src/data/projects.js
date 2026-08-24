@@ -1,13 +1,13 @@
 // Importation des images et vidéos des projets
 import swiftShopMain from '../projectsImg/SwiftShop_main.png'
 import swiftShopSmall from '../projectsImg/SwiftShop_small.png'
-import swiftShopVideo from '../projectsImg/SwiftShop.mp4'
 
 import weatherForecastMain from '../projectsImg/Weather_Forecast_main.png'
 import weatherForecastVideo from '../projectsImg/Weather_Forecast.mp4'
 
 import godotMain from '../projectsImg/Godot_main.png'
 import godotSmall from '../projectsImg/Godot_small.png'
+
 import formaPlusSmall from '../projectsImg/FormaPlus_small.svg'
 import formaPlusMain from '../projectsImg/FormaPlus_main.png'
 
@@ -21,15 +21,15 @@ export const projectsData = [
         technologies: ["PHP", "Laravel", "MySQL", "CSS", "HTML", "Javascript"],
         mainImg: swiftShopMain,
         smallImg: swiftShopSmall,
-        video: swiftShopVideo,
+        video: "https://www.youtube.com/embed/QypXf01YQ0s?si=OdkVrmkHvKGps3j5",
         lien: "https://github.com/aZeDen31/e-commerce-laravel"
     },
     {
         id: 2,
         name: "FormaPlus",
         descriptionCourte: "Application de gestion de formations pour les bénévoles de l'association Frequencies.",
-        description: "Formaplus est une application web que j'ai réalisé pour l'association Frequencies. Elle permet de récupérer et d'afficher les informations par rapport à différentes formations et webinaires de plusieurs sources différentes.\nLa partie frontend est faite en React et le scraping (récupération automatique des données sur les sites fournisseurs de formation) est fait en Python.\nJ'ai réalisé ce projet dans le cadre de mon stage et il s'agit de la première fois que mon travail se trouve en production.",
-        technologies: ["React", "JavaScript", "Python", "Firebase/Firestore"],
+        description: "Formaplus est une application web dont j'ai participé au développement pour les besoins de l'association Frequencies. Elle permet de récupérer et d'afficher les informations par rapport à différentes formations et webinaires de plusieurs sources différentes.\nLa partie frontend est faite en React et le scraping (récupération automatique des données sur les sites fournisseurs de formation) est fait en Python.\nC'est moi qui ai intégré la carte pour chaque formation disposant d'une adresse via OpenStreetMap, et j'ai traduit lesdites adresses en coordonnées GPS grâce à une API mise à disposition par le gouvernement.\nJ'ai réalisé ce projet dans le cadre de mon stage et il s'agit de la première fois que mon travail se trouve en production.",
+        technologies: ["React", "JavaScript", "Python", "Firebase/Firestore", "NoSQL", "Scraping", "OpenStreetMap"],
         mainImg: formaPlusMain,
         smallImg: formaPlusSmall,
         video: "https://www.youtube.com/embed/McH7sn7SQVQ?si=m8MkFTVLMNCDeLju",

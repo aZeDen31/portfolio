@@ -1,6 +1,12 @@
+import { useEffect } from 'react'
 import Header from '../components/header'
+import Footer from '../components/footer'
 
 function Project({ project, onBack }) {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [project]);
+
     if (!project) return null;
 
     const fullDescription = project.description || project.descriptionCourte;
@@ -61,6 +67,7 @@ function Project({ project, onBack }) {
                     )}
                 </div>
             </main>
+            <Footer />
         </>
     )
 }
