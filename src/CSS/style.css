@@ -55,11 +55,12 @@ h1 {
     align-items: center;
     justify-self: center;
     gap: 50px;
-    width: 70%;
+    width: 100%;
 }
 
 .hero-section p {
     font-size: 1.4em;
+    text-align: justify;
 }
 
 .hero-image {
@@ -507,6 +508,7 @@ h1 {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -517,6 +519,7 @@ h1 {
         opacity: 0;
         transform: translateY(5px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
