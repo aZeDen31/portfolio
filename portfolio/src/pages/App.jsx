@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import heroImg from '../assets/Selfie.jpg'
 import cvPDF from '../assets/CV Stage Web.pdf'
 import { projectsData } from '../data/projects.js'
@@ -10,6 +10,23 @@ import "../CSS/style.css"
 
 function App() {
   const [selectedProject, setSelectedProject] = useState(null)
+
+  useEffect(() => {
+    if (!selectedProject && window.location.hash) {
+      const timer = setTimeout(() => {
+        const id = window.location.hash.substring(1);
+        if (id) {
+          const element = document.getElementById(id);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }, 50);
+      return () => clearTimeout(timer);
+    }
+  }, [selectedProject]);
 
   if (selectedProject) {
     return (

@@ -1,4 +1,4 @@
-// Import actual existing assets
+// Importation des images et vidéos des projets
 import swiftShopMain from '../projectsImg/SwiftShop_main.png'
 import swiftShopSmall from '../projectsImg/SwiftShop_small.png'
 import swiftShopVideo from '../projectsImg/SwiftShop.mp4'
@@ -8,13 +8,9 @@ import weatherForecastVideo from '../projectsImg/Weather_Forecast.mp4'
 
 import godotMain from '../projectsImg/Godot_main.png'
 import godotSmall from '../projectsImg/Godot_small.png'
-import godotVideo from '../projectsImg/Jeu.mp4'
-
 import formaPlusSmall from '../projectsImg/FormaPlus_small.svg'
 import formaPlusMain from '../projectsImg/FormaPlus_main.png'
 
-// Fallback image for missing assets (FormaPlus)
-import placeholderImg from '../assets/Photo placeholder.png'
 
 export const projectsData = [
     {
@@ -32,11 +28,11 @@ export const projectsData = [
         id: 2,
         name: "FormaPlus",
         descriptionCourte: "Application de gestion de formations pour les bénévoles de l'association Frequencies.",
-        descritpion: "Formaplus est une application web que j'ai réalisé pour l'association Frequencies. Elle permet de récupérer et d'afficher les informations par rapport à différentes formations et webinaires de plusieurs sources différentes.\nLa partie frontend est faite en React et le scraping (récupération automatique des données sur les sites fournisseurs de formation) est fait en Python.\nJ'ai réalisé ce projet dans le cadre de mon stage et il s'agit de la première fois que mon travail se trouve en production.",
+        description: "Formaplus est une application web que j'ai réalisé pour l'association Frequencies. Elle permet de récupérer et d'afficher les informations par rapport à différentes formations et webinaires de plusieurs sources différentes.\nLa partie frontend est faite en React et le scraping (récupération automatique des données sur les sites fournisseurs de formation) est fait en Python.\nJ'ai réalisé ce projet dans le cadre de mon stage et il s'agit de la première fois que mon travail se trouve en production.",
         technologies: ["React", "JavaScript", "Python", "Firebase/Firestore"],
         mainImg: formaPlusMain,
         smallImg: formaPlusSmall,
-        video: null,
+        video: "https://www.youtube.com/embed/McH7sn7SQVQ?si=m8MkFTVLMNCDeLju",
         lien: null
     },
     {
@@ -58,7 +54,7 @@ export const projectsData = [
         technologies: ["Godot", "GDScript"],
         mainImg: godotMain,
         smallImg: godotSmall,
-        video: godotVideo,
+        video: "https://www.youtube.com/embed/57fjyg_9qNc?si=2DqX6Kq5f84BMP_R",
         lien: null
     }
 ]

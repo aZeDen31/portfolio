@@ -1,8 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: #0B0E14;
 }
+
+#projets,
+#parcours,
+#contact {
+    scroll-margin-top: 100px;
+}
+
 
 header {
     position: sticky;
@@ -53,8 +64,9 @@ h1 {
 }
 
 .hero-image {
-    width: 800px;
+    width: 400px;
     height: auto;
+    border-radius: 10px;
 }
 
 .projects-grid {
@@ -228,4 +240,14 @@ h1 {
 
 .btn-project-link:hover {
     background-color: #3f4448;
+}
+
+.project-detail-iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: #000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    display: block;
 }
