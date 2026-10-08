@@ -46,7 +46,7 @@ function App() {
           <img src={heroImg} alt="Photo Lucas Gosselin" className="hero-image" />
           <div id="about-me">
             <h1>Lucas Gosselin</h1>
-            <p>Étudiant en deuxième année de développement informatique, je m'intéresse à la conception d'applications web et de jeux sous Unity. J'aime comprendre comment les choses fonctionnent en profondeur et transformer des idées en solutions concrètes à travers le code. Curieux et rigoureux, je cherche constamment à améliorer mes compétences et à relever de nouveaux défis techniques.</p>
+            <p>Étudiant en troisième année de développement informatique, je m'intéresse à la conception d'applications web et de jeux sous Unity. J'aime comprendre comment les choses fonctionnent en profondeur et transformer des idées en solutions concrètes à travers le code. Curieux et rigoureux, je cherche constamment à améliorer mes compétences et à relever de nouveaux défis techniques.</p>
             <a href={cvPDF} className="bouton-cv" target="_blank" style={{ color: 'white' }}>Mon CV</a>
           </div>
         </div>
